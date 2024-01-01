@@ -1,0 +1,54 @@
+#base{
+	background-color: white;
+	height: 100vh;
+}
+
+
+#left{
+	display: inline-block;
+	height: 100%;
+	background-color: #8062E0;
+	width: 30%;
+	overflow-y: scroll;
+}
+
+#left nav {
+
+	height: 40px;
+	background-color: #353535;
+
+}
+
+#right{
+	display: inline-block;
+	background-color: #DBDBDB;
+	height: 100%;
+	width: 70%;
+	overflow-y: scroll;
+}
+
+
+.btn{
+	background-color: #8062E0;
+	color: beige;
+	border: 2px solid #C0C0C0;
+}
+
+.btn:hover{
+	color: white;
+	border-color: white;
+	cursor: pointer;
+}
+
+#TextZone{
+	height: 100%;
+	display: grid;
+	align-content: center;
+    justify-content: center;
+}
+
+.btn#past_text{
+	width: 100px;
+	height: 40px;
+	border-block-style: solid;
+}
