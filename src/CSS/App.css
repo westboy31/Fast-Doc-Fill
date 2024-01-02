@@ -1,3 +1,17 @@
+*{
+
+	font-family: work sans, sans-serif;
+}
+
+html{
+	overflow-y: hidden;
+}
+
+body{
+	margin: 0;
+}
+
+
 #base{
 	background-color: white;
 	height: 100vh;
@@ -7,7 +21,8 @@
 #left{
 	display: inline-block;
 	height: 100%;
-	background-color: #8062E0;
+	/*background-color: #8062E0;*/
+	background-color: #4c388e;
 	width: 30%;
 	overflow-y: scroll;
 }
@@ -21,10 +36,11 @@
 
 #right{
 	display: inline-block;
-	background-color: #DBDBDB;
+	background-color: white;
 	height: 100%;
 	width: 70%;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 
@@ -40,15 +56,40 @@
 	cursor: pointer;
 }
 
-#TextZone{
+#TextZone{   
 	height: 100%;
-	display: grid;
+	background-color: white;
+	display: flex;
+/*	display: grid;
 	align-content: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
-.btn#past_text{
-	width: 100px;
-	height: 40px;
-	border-block-style: solid;
+#divText{
+	width: 95%;
+	height: 100%;
+	resize: none;
+	background-color: white;
+	border: none;
+	margin: 20px;
+
+}
+
+#txtU{
+	width: 95%;
+	height: 100%;
+	resize: none;
+	background-color: white;
+	border: none;
+	margin: 20px;
+
+}
+#txtU:focus{
+	outline: none;
+}
+#txtU::placeholder {
+	font-size: 31px;
+    text-align: center;
+    padding-top: 40vh;
+
 }

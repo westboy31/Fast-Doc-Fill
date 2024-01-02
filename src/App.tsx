@@ -1,12 +1,11 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import Panel from './Components/Panel'
 import TextZone from './Components/TextZone'
 import './CSS/App.css'
 
 function App() {
-  return (
-    <>
-       <div id="base">
+    return ( <>
+        <div id="base">
          <div id="left" className="left">
            <nav></nav>
            <Panel className="comp"></Panel>
@@ -15,9 +14,9 @@ function App() {
            <TextZone></TextZone>
          </div>
        </div>
-   
-    </>
-  )
+
+        </>
+    )
 }
 
 export default App
