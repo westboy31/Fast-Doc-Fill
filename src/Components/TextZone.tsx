@@ -7,37 +7,41 @@ import DOMPurify from 'dompurify'
 
 //VAR init--------------
 const mdit = markdownit()
-//let md_txt: string = ""
-//const mdHTML = createElement()
 //------------------
 
 
 function TextZone() {
 	//Use Ref -------------------------------------------------------
-    const txtU: React.MutableRefObject < null > = useRef(null)
-    const TextDiv: React.MutableRefObject < null > = useRef(null)
+    const txtU  = useRef<HTMLTextAreaElement>(null)
+    //const TextDiv: React.MutableRefObject < null > = useRef(null)
     //---------------------------------------------------------------
 
+    //types---------------------------------------------------------
+    type display = "block" | "none"
+    //types---------------------------------------------------------
+
 	//Use Ref -------------------------------------------------------
-    const [dispalyTxtU, setDispalyTxtU] = useState("block")
-    const [md_txt, setMd_txt] = useState("")
+    const [dispalyTxtU, setDispalyTxtU] = useState<display>("block")
+    const [md_txt, setMd_txt] = useState<string>("")
     //---------------------------------------------------------------
 
     //Function events ------------------------------------------------
-    const handleInput = (e: { nativeEvent: { inputType: string; }; }) => {
-        if (e.nativeEvent.inputType == "insertFromPaste") {
-            setMd_txt( DOMPurify.sanitize(mdit.render(txtU.current.value)))
-            setDispalyTxtU("none")
-            txtU.current.innerHTML = md_txt
-        } else {
-            txtU.current.value = ""
-        }
-    }
+	const handleInput = (e: any) => {
+	    if (txtU.current) {
+	        if (e.nativeEvent.inputType == "insertFromPaste") {
+	            setMd_txt(DOMPurify.sanitize(mdit.render(txtU.current.value)))
+	            setDispalyTxtU("none")
+	            txtU.current.innerHTML = md_txt
+	        } else {
+	            txtU.current.value = ""
+	        }
+	    }
+	}
 	//-------------------------------------------------------------
 
 //Render---------------------------------------------------------------
     return ( < >
-        <div ref={TextDiv} id="TextZone">
+        <div    id="TextZone">
         <div    id="divText" 
         		dangerouslySetInnerHTML={{__html : md_txt}}
         		style={{display : dispalyTxtU=="block" ? "none" : "block"}}
