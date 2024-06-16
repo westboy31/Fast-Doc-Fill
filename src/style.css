@@ -1,0 +1,156 @@
+*{
+
+  font-family: work sans, sans-serif;
+}
+
+html{
+  overflow-y: hidden;
+}
+
+body{
+  margin: 0;
+}
+
+
+#base{
+  background-color: white;
+  height: 100vh;
+}
+
+
+#left{
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  /*background-color: #8062E0;*/
+  background-color: #4c388e;
+  width: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#left nav {
+
+  height: 40px;
+  background-color: #3d3d3d;
+
+  color: white;
+   font-family: "Oswald", sans-serif;
+padding-left: 10px;
+padding-right: 10px;
+   font-weight: bold;
+   font-size: 22px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   
+
+
+}
+
+#left nav button{
+  width: 30%;
+  font-size: 10px;
+  height: 80%;
+  overflow: hidden;
+  background-color: #413fa2;
+    color: white;
+    font-weight: bold;
+    border: solid 0.8px #8996ff;
+
+
+}
+#left nav button:hover{
+  cursor: pointer;
+   border: solid 2px #8996ff;
+  ;
+}
+
+#right{
+  display: inline-block;
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+.btn{
+  background-color: #8062E0;
+  color: beige;
+  border: 2px solid #C0C0C0;
+}
+
+.btn:hover{
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+
+#TextZone{   
+  height: 100%;
+  background-color: white;
+  display: flex;
+/*  display: grid;
+  align-content: center;
+    justify-content: center;*/
+}
+
+#divText{
+  width: 95%;
+  height: 100%;
+  resize: none;
+  background-color: white;
+  border: none;
+  margin: 20px;
+
+}
+
+#txtU{
+  width: 95%;
+  height: 100%;
+  resize: none;
+  background-color: white;
+  border: none;
+  margin: 20px;
+
+}
+#txtU:focus{
+  outline: none;
+}
+#txtU::placeholder {
+  font-size: 31px;
+    text-align: center;
+    padding-top: 40vh;
+
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#bottom-nav{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: -webkit-fill-available;
+  justify-content: space-around;
+
+}

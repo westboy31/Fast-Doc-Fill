@@ -1,0 +1,24 @@
+.input{
+	border-bottom: solid #9f9f9f 0.5px;
+	padding: 10px;
+}
+
+.input div{
+	color: white;
+	margin: ;
+}
+
+
+.input textarea{
+	background-color: #F0F0F0;
+	width: 100%;
+	max-width: 100%;
+	  margin-top: 5px ;
+}
+
+.input textarea:focus { 
+     outline: none !important;
+     border-color: #8996ff;
+     box-shadow: 0 0 10px #8996ff;
+
+ }
