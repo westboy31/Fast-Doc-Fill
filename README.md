@@ -41,8 +41,7 @@ To set up the project locally, follow these steps:
 
 2. **Run the Application:**
     ```sh
-    npm install
-    npm start
+    npm run dev
     ```
 
 ## License
