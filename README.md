@@ -35,7 +35,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the Repository:**
     ```sh
-    git clone https://github.com/yourusername/fast-doc-fill.git
+    git clone https://github.com/westboy31/Fast-Doc-Fill.git
     cd fast-doc-fill
     ```
 
